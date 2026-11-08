@@ -19,3 +19,8 @@ const processInput = (input: string | number | boolean) => {
     return input.trim().toLowerCase();
   }
 };
+
+type Location = readonly [number, number, string];
+const formatCoordinate = (location: Location) => {
+  return `Location: ${location[2]} (${location[0]}, ${location[1]})`;
+};
