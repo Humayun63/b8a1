@@ -44,3 +44,12 @@ const getPopularCourses = (
     (course) => course.isPublished && course.students >= minStudents,
   );
 };
+
+const pluckValues = <T, K extends keyof T>(items: T[], key: K): T[K][] => {
+  const result: T[K][] = [];
+  items.forEach((item) => {
+    result.push(item[key]);
+  });
+
+  return result;
+};
