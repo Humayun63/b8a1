@@ -24,3 +24,8 @@ type Location = readonly [number, number, string];
 const formatCoordinate = (location: Location) => {
   return `Location: ${location[2]} (${location[0]}, ${location[1]})`;
 };
+
+const concatenateArrays = <T>(...arrays: T[][]): T[] => {
+  const result: T[] = [];
+  return result.concat(...arrays);
+};
