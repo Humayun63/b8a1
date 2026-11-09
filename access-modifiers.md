@@ -58,3 +58,7 @@ console.log(kabir.showSalary()) // work
 console.log(kabir.id) // work
 kabir.id = 5; // error
 ```
+
+## Conclusion
+
+Access modifiers are use to control the access of the properties/methods of the class.
